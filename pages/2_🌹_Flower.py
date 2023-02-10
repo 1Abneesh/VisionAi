@@ -304,13 +304,20 @@ def main():
                 not_flower(image)
             else:
                 col1,col2,col3 = st.columns([1,2,1])
+                
                 with col2:
                     st.image(image, caption='Uploaded Image.', width=500)
                 print_probability(top_flowers, top_probs)
                 search_term = top_flowers            
                 if search_term:
+                    query = search_term[0]
+
+                    search_link = f"https://www.google.com/search?q={query}"
+                    
                     if st.button("Google Search"):
                         open_search(search_term)
+                    st.write('Use link if button does not work')
+                    st.markdown(f"[Search]({search_link})", unsafe_allow_html=True)
     elif option == "Upload an image":
         # Code for uploading an image file
         uploaded_file = st.file_uploader("Choose an image for prediction greater than 400KB...", type=["jpg", "jpeg", "png", "gif"])   
@@ -336,8 +343,13 @@ def main():
                 print_probability(top_flowers, top_probs)
                 search_term = top_flowers 
                 if search_term:
+                    query = search_term[0]
+                    search_link = f"https://www.google.com/search?q={query}"
+                    
                     if st.button("Google Search"):
                         open_search(search_term[0])
+                    st.write('Use link if button does not work')
+                    st.markdown(f"[Search]({search_link})", unsafe_allow_html=True)
 
 
     local_css("pages.css")

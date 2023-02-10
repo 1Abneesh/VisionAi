@@ -139,9 +139,14 @@ st.header("Contact Us")
 st.write("For any inquiries or questions, please contact us at 01abneeshkumar@gmail.com.")
 
 st.write("")
+
+search_link = f"https://multiple-disease-prediction-app.onrender.com/"
+
 if st.button('DiagnosticAI'):
     open_search('https://multiple-disease-prediction-app.onrender.com/')
 
+st.write('click on the link if button does not work')
+st.markdown(f"[Search]({search_link})", unsafe_allow_html=True)
 #applying css
 def local_css(file_name):
     with open(file_name) as f:
