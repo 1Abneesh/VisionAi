@@ -96,11 +96,8 @@ def add_logo(png_file):
 
 torch.nn.Module.dump_patches = True
 
-
-
 def open_search(search_term):
     webbrowser.open(f"https://www.google.com/search?q={search_term}")
-
 
 #checking for GPU avilability
 def check_gpu(gpu_arg):
