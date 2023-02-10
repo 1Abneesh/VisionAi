@@ -17,6 +17,7 @@ VisionAI is a powerful image classification web application that uses state-of-t
 - Datasets
 - Deployment
 - Requirements
+- Use case
 - Contributing
 - License
 
@@ -104,6 +105,11 @@ The app is deployed as a Streamlit web app and can be easily run on any local ma
 - plotly==5.9.0
 - torch==1.11.0
 - torchvision==0.12.0
+
+## Use case
+<p align="center">
+  <img src="use_case.png">
+</p>
 
 ## Contributing
 If you want to contribute to the development of VisionAI, feel free to fork the repository and submit a pull request.
