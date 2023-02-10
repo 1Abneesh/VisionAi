@@ -5,10 +5,8 @@ Created on Sat Dec 24 16:55:45 2022
 @author: 01abn
 """
 import streamlit as st
-import pickle
-from streamlit_option_menu import option_menu
-from PIL import Image
 import base64
+from streamlit.components.v1 import html
 
 st.set_page_config(
     page_title="Contact us",

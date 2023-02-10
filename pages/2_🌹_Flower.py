@@ -9,21 +9,12 @@ Created on Tue Feb  7 16:45:22 2023
 
 #importing necessary libraries
 import numpy as np
-import matplotlib.pyplot as plt
 import torch
-import PIL
 import math
-from torch import nn
-import argparse
 import json
-from torch import optim
-from torchvision import datasets, models, transforms
-from collections import OrderedDict
 from torchvision import models
 from PIL import Image
-import torch.nn.functional as F
 import torch.utils.data
-import pandas as pd
 import streamlit as st
 import base64
 import requests
@@ -32,18 +23,6 @@ import webbrowser
 from streamlit_lottie import st_lottie_spinner
 import time
 from streamlit.components.v1 import html
-# define Mandatory and Optional Arguments for the script
-# def arg_parser():
-#     parser = argparse.ArgumentParser(description="predict.py")
-    
-#     parser.add_argument('--image',type=str,help='Point to image file for prediction.',required=True)
-#     parser.add_argument('--category_names', dest="category_names", action="store", default='cat_to_name.json')
-#     parser.add_argument('--checkpoint',type=str,help='Point to checkpoint file as str.',required=True)
-#     parser.add_argument('--gpu', default="gpu", action="store", dest="gpu")
-#     parser.add_argument('--top_k',type=int,help='Choose top K matches as int.')
-
-#     args = parser.parse_args()
-#     return args
 
 
 st.set_page_config(page_title="Image Input", page_icon=":camera:", layout="wide")

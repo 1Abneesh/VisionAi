@@ -5,15 +5,9 @@ Created on Tue Feb  7 15:09:22 2023
 @author: 01abn
 """
 
-import time
 import requests
-import pickle
 import streamlit as st
-from streamlit_option_menu import option_menu
-from PIL import Image
 from streamlit_lottie import st_lottie
-from streamlit_lottie import st_lottie_spinner
-import plotly.express as px
 import base64
 from streamlit.components.v1 import html
 
